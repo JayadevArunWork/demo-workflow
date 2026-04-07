@@ -1,0 +1,9 @@
+name: task-9-env-var-ci
+on: [push]
+jobs:
+  env:
+    runs-on: ubuntu-latest
+    env:
+      APP: demo
+    steps:
+      - run: echo $APP
