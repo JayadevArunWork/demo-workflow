@@ -1,0 +1,17 @@
+name: task-2-pr-validation
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Validate PR
+        run: echo "Validated PR"
+      - name: Print Present Working Directory
+        run: |
+          echo "Present Working Directory is"
+          pwd
