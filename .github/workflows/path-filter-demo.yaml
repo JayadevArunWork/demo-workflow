@@ -1,0 +1,10 @@
+name: task-4-path-filter
+on:
+  push:
+    paths:
+      - 'src/**'
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Triggered For Path Change Only"
