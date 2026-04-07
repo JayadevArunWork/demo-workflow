@@ -4,6 +4,8 @@ jobs:
   env:
     runs-on: ubuntu-latest
     env:
-      APP: demo
+      APP: medimesh
+      TYPE: production
+      PORT: 8080
     steps:
-      - run: echo $APP
+      - run: echo "$APP of type $TYPE runs on port $PORT"
