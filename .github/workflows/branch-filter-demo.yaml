@@ -1,10 +1,10 @@
-name: task-3-branch-filter
+name: task-4-path-filter
 on:
   push:
-    branches:
-      - main
+    paths:
+      - 'src/**'
 jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Main Branch Only"
+      - run: echo "Triggered For Path Change Only"
