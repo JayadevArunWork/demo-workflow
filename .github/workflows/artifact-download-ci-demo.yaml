@@ -1,0 +1,9 @@
+name: task-14-artifact-download-ci
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: app
